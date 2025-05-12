@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <title>Terms & Conditions - SreeConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+
+
+    <!-- Navbar -->
+<nav class="navbar">
+ <div class="navbar-brand">
+    <img src="Images/SreeConnect.png" alt="SreeConnect Logo" class="navbar-logo">
+</div>
+
+
+    <ul class="navbar-menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html#features">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="main.html#faqs">FAQs</a></li>
+    </ul>
+</nav>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0px;
+            background-color: #eef6ff;
+            color: #333;
+            line-height: 1.7;
+        }
+        h1, h2 {
+            color: #007bff;
+            text-align: center;
+        }
+        p, ul {
+            max-width: 900px;
+            margin: 10px auto;
+            font-size: 17px;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            background: #ffffff;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+            max-width: 900px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+         /* Navbar */
+/* Navbar styling */
+
+/* Navbar basic styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #004080; /* Blue initially */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Logo + Company Name */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Company name (default white) */
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+/* Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    color: white; /* default white */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 12px;
+    transition: color 0.5s ease;
+}
+
+.navbar-menu li a:hover {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+/* --- AFTER SCROLLING --- */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    backdrop-filter: blur(5px); /* optional smoothness */
+}
+
+.navbar.scrolled .company-name,
+.navbar.scrolled .navbar-menu li a {
+    color: black; /* Turn text black after scroll */
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center; /* Align everything vertically */
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* Example background color */
+}
+
+/* Logo + Company Name */
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Logo and text side by side, center aligned */
+}
+
+.navbar-logo {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Optional: hover effect */
+.navbar-menu li a:hover {
+    color: #f0c040;
+}
+
+
+
+
+.navbar {
+    background: #004080;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 12px;
+}
+
+.navbar a:hover {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+/* Footer Banner Styles */
+        .footer-banner {
+            background-color: #003366;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .company-section, .social-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .company-logo {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aad4ff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        .social-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .social-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-section li {
+            margin-bottom: 10px;
+        }
+
+        .social-section a {
+            color: #aad4ff;
+            text-decoration: none;
+        }
+
+        .social-section a:hover {
+            color: #ffffff;
+        }
+
+        .social-section img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .policy-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .policy-links a {
+            color: #aad4ff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .policy-links a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        hr {
+            border: 1px solid #ffffff;
+            margin: 30px 0;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+            color: #aad4ff;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 data-aos="fade-down">Terms & Conditions</h1>
+    <p data-aos="fade-up" style="text-align:center;">Effective Date: May 10, 2025</p>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Introduction</h2>
+        <p>Welcome to SreeConnect! These Terms and Conditions outline the rules and regulations for the use of our website. By accessing this website, you accept these terms in full. If you disagree with any part of these terms, please do not use SreeConnect.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Use of Website</h2>
+        <p>You agree to use SreeConnect for lawful purposes only. You must not use our site:</p>
+        <ul>
+            <li>In any way that breaches any applicable laws or regulations.</li>
+            <li>For fraudulent, harmful, or unlawful activities.</li>
+            <li>To send, knowingly receive, upload, or download any material that does not comply with our standards.</li>
+            <li>To transmit unsolicited or unauthorized advertising (spam).</li>
+        </ul>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Intellectual Property</h2>
+        <p>All content on SreeConnect, including text, notes, textbooks, graphics, and logos, is the property of SreeConnect or its content suppliers. Users may access materials for personal, educational use only. Commercial use, reproduction, or redistribution without written consent is strictly prohibited.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Accuracy of Information</h2>
+        <p>We strive to provide accurate and up-to-date resources. However, SreeConnect does not guarantee the completeness, reliability, or accuracy of any information available on the website. Educational resources are provided "as-is" without warranties of any kind.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>User-Generated Content</h2>
+        <p>In certain areas of our website, users may upload or share content (like suggestions or feedback). You retain ownership of your content but grant SreeConnect a non-exclusive license to use, display, and distribute such content on our platform.</p>
+        <p>You are solely responsible for any content you post and agree that it will not violate any third party rights, including copyrights or privacy rights.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Third-Party Links</h2>
+        <p>SreeConnect may include links to external websites. These links are provided for convenience only. We do not endorse or assume any responsibility for third-party content, policies, or practices. Accessing third-party sites is at your own risk.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Limitation of Liability</h2>
+        <p>In no event shall SreeConnect or its team be liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of or inability to use the website. Your sole remedy for dissatisfaction is to stop using the website.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless SreeConnect from and against any claims, liabilities, damages, losses, and expenses arising from your violation of these Terms or your use of the site.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Termination</h2>
+        <p>We reserve the right to terminate or suspend your access to SreeConnect immediately, without prior notice, for any breach of these Terms or for any conduct that we, at our sole discretion, deem harmful to our platform or other users.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Modifications</h2>
+        <p>SreeConnect reserves the right to revise these Terms at any time. By continuing to access or use our services after changes become effective, you agree to be bound by the updated terms. Please review this page periodically for updates.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Governing Law</h2>
+        <p>These Terms shall be governed and interpreted in accordance with the laws of India. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about these Terms and Conditions, feel free to contact us at <a href="mailto:sreesri1004@gmail.com">sreesri1004@gmail.com</a>.</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
+<!-- Footer Banner -->
+    <footer class="footer-banner" data-aos="fade-up">
+        <div class="footer-content">
+            <div class="company-section">
+                <h2>SreeConnect</h2>
+                <p>Connecting students with high-quality engineering resources.  
+                A trusted hub for your academic journey and guiding you through every step of your engineering journey with expert-curated materials</p>
+
+                <div class="footer-links">
+                    <a href="main.html">Home</a> |
+                    <a href="main.html#features">Features</a> |
+                    <a href="about.html">About</a> |
+                    <a href="main.html#faqs">FAQs</a>
+                </div>
+            </div>
+
+            <div class="social-section" id="social-media">
+                <h3>Social</h3>
+                <ul>
+                     <li><a href="https://www.instagram.com/attitude_srinivas/" target="_blank"><i class="fa-brands fa-instagram"></i>  Instagram </a></li>
+                    <li><a href="https://www.facebook.com/srinivasu.sree" target="_blank"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/sree-srinivas/" target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li>
+                    <li><a href="https://t.me/SreeConnect" target="_blank"><i class="fa-brands fa-telegram"></i>  Telegram</a></li>
+                    <li><a href="http://www.youtube.com/@Srinivas_Sree" target="_blank"><i class="fa-brands fa-youtube"></i>  Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="policy-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="code.html">Code of Conduct</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <p class="copyright">© 2025 SreeConnect. All rights reserved.</p>
+    </footer>
+
+    <!-- Animate on Scroll JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+
+</body>
+</html>
