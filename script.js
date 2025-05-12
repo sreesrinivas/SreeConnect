@@ -84,7 +84,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Check if username exists and password matches
     if (users[username] && users[username] === password) {
         // ✅ Redirect to main page
-        window.location.replace("/SreeConnect/Home");
+        window.location.replace("SreeConnect/Home");
     } else {
         document.getElementById('errorMsg').innerText = "Invalid username or password!";
         document.getElementById('errorMsg').style.color = "red";
